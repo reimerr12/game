@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .btn1{
+        @apply px-7 py-2 bg-red-600 text-black1 rounded-full text-lg font-bold hover:bg-black hover:text-red-600 duration-200 ease-in capitalize
+    }
+    .btn2{
+        @apply px-7 py-2 bg-primary-color text-white rounded-full text-lg font-bold hover:bg-red-color hover:text-white duration-200 ease-in capitalize
+    }
+}

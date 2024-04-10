@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/df9783ea42.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="top-0 left-0 fixed z-10 w-full bg-transparent backdrop-blur-xl pt-4 pb-2 text-white">
+        <nav class="container relative flex  md:flex-row justify-between items-center">
+            <div class="flex justify-center items-center gap-5">
+                <div class="text-2xl md:text-3xl font-bold text-white">Logo</div>
+                <div>
+                    <input type="text" placeholder="search" class=" p-2 rounded-xl bg-primary-color focus:outline-none">
+                </div>
+            </div>
+            
+            <!-- mobile screen -->
+            <div class="hidden absolute top-0 left-0 w-full bg-primary-color pb-4 border-b-2 border-red-color md:block md:static md:border-none md:p-none md:w-auto md:ml-auto md:bg-transparent">
+                <ul class="flex flex-col justify-center items-center md:flex-row gap-10">
+                    <li>
+                        <a href="#news" class=" py-2 px-4 text-lg font-bold hover:text-red-600 hover:bg-primary-color hover:rounded-xl duration-200 ease-in">News</a>
+                    </li>
+                    <li>
+                        <a href="#games" class=" py-2 px-4 text-lg font-bold hover:text-red-600 hover:bg-primary-color hover:rounded-xl duration-200 ease-in">Games</a>
+                    </li>
+                    <li>
+                        <a href="#media" class=" py-2 px-4 text-lg font-bold hover:text-red-600 hover:bg-primary-color hover:rounded-xl duration-200 ease-in">Media</a>
+                    </li>
+                    <li>
+                        <button class="btn1">sign in</button>
+                    </li>
+                    <li>
+                        <button class="btn2">play now</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-2 md:hidden">
+                <i class="fa-solid fa-bars text-xl ml-2 hover:text-red-500 duration-150 hover:bg-primary-color hover:rounded-xl p-2"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="">
+            <div class="top-0 left-0 right-0 bottom-0 overflow-hidden -z-10">
+                <video autoplay muted loop>
+                    <source src="https://www.riotgames.com/darkroom/original/eedccd01fe642a9a6f5b5a4725c3c1c7:cab5f0653154a0cf9a07d7dc3334a71e/rg-brand-cinematic.mp4" type="video/mp4">
+                </video>
+            </div>           
+        </section>
+
+        <section id="news" class=" py-12 bg-black1 text-white h-auto border-b-2 border-red-color">
+            <div class="container relative">
+                <div class="flex items-center justify-between md:flex-row">
+                   <h2 class="text-2xl md:text-6xl font-bold capitalize">What's happening?</h2>
+                    <a href="" class="btn2">see more</a>
+                </div>
+
+                <div class="py-8 mt-4 grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-primary-color transition-transform duration-200 transform hover:scale-105 overflow-hidden rounded-xl hover:shadow-xl hover:shadow-red-color">
+                        <div class="">
+                            <img alt="" class="rounded-xl  h-full" src="images/leesin first look.jpg">
+                        </div>
+
+                        <div class="mt-4 pb-4 ">
+                            <h3 class="text-2xl md:text-3xl font-bold capitalize">Arena, Lee Sin &amp; PvE Mode First-Look | Dev Update - League of Legends</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary-color transition-transform duration-200 transform hover:scale-105 overflow-hidden rounded-xl hover:shadow-xl hover:shadow-red-color">
+                        <div class="">
+                            <img alt="" class="rounded-xl  h-auto" src="images/league2.jpeg">
+                        </div>
+
+                        <div class="mt-4 pb-4 ">
+                            <h3 class="text-2xl md:text-3xl font-bold capitalize">wild rift updates &amp; new champions | Dev Update - League of Legends</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary-color transition-transform duration-200 transform hover:scale-105 overflow-hidden rounded-xl hover:shadow-xl hover:shadow-red-color">
+                        <div class="">
+                            <img alt="" class="rounded-xl h-auto" src="images/wildrift.jpg_large">
+                        </div>
+
+                        <div class="mt-4 pb-4 ">
+                            <h3 class="text-2xl md:text-3xl font-bold capitalize">patch updates &amp; new split rank reset | Dev Update - League of Legends</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary-color transition-transform duration-200 transform hover:scale-105 overflow-hidden rounded-xl hover:shadow-xl hover:shadow-red-color">
+                        <div class="">
+                            <img alt="" class="rounded-xl  h-auto" src="images/league3.jpg">
+                        </div>
+
+                        <div class="mt-4 pb-4 ">
+                            <h3 class="text-2xl md:text-3xl font-bold capitalize">new skinline and much more on the rift  | Dev Update - League of Legends</h3>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-primary-color pt-8 pb-8 border-b-2 border-red-color" id="games">
+                <div class="container mt-8 ">
+                    <div class="flex items-center justify-between md:flex-row">
+                        <h2 class="text-2xl md:text-6xl font-bold capitalize text-white mb-4">our games</h2>
+                         <a href="" class="btn1">install</a>
+                     </div>
+                   <div class="grid gap-10 md:grid-cols-2 mt-4 pb-4">
+                        <div class="relative transition-transform duration-200 ease-in transform hover:scale-105 hover:shadow-2xl hover:shadow-red-color ">
+                            <img src="images/league1.jpg" alt="" class="rounded-xl h-auto w-auto">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-100  bg-black bg-opacity-20 duration-200 rounded-xl">
+                                <img src="images/lol-logotype.png" class="w-80" alt="">
+                                <a href="" class="px-7 py-2 bg-primary-color text-white rounded-full text-xl font-bold hover:bg-red-color hover:text-white duration-200 ease-in capitalize mt-2">play for free</a>
+                            </div>
+                        </div>
+
+                        <div class="relative transition-transform duration-200 ease-in transform hover:scale-105 hover:shadow-2xl hover:shadow-red-color ">
+                            <img src="images/valorant.jpg" alt="" class="rounded-xl h-auto w-auto">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-100 bg-black bg-opacity-20 duration-200 rounded-xl">
+                                <img src="images/valorant-logotype.png" class="w-80" alt="">
+                                <a href="" class="px-7 py-2 bg-primary-color text-white rounded-full text-xl font-bold hover:bg-red-color hover:text-white duration-200 ease-in capitalize mt-2">play for free</a>
+                            </div>
+                        </div>
+
+                        <div class="relative transition-transform duration-200 ease-in transform hover:scale-105 hover:shadow-2xl hover:shadow-red-color ">
+                            <img src="images/teamfighttactics.jpg" alt="" class="rounded-xl h-auto w-auto">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-100 bg-black bg-opacity-20 duration-200 rounded-xl">
+                                <img src="images/tft-logotype-2021.png" class="w-80" alt="">
+                                <a href="" class="px-7 py-2 bg-primary-color text-white rounded-full text-xl font-bold hover:bg-red-color hover:text-white duration-200 ease-in capitalize mt-2">play for free</a>
+                            </div>
+                        </div>
+
+                        <div class="relative transition-transform duration-200 ease-in transform hover:scale-105 hover:shadow-2xl hover:shadow-red-color ">
+                            <img src="images/wildrift.jpg_large" alt="" class="rounded-xl h-auto w-auto">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-100 bg-black bg-opacity-20 duration-200 rounded-xl">
+                                <img src="images/lol-wildrift-logotype.png" class="w-80" alt="">
+                                <a href="" class="px-7 py-2 bg-primary-color text-white rounded-full text-xl font-bold hover:bg-red-color hover:text-white duration-200 ease-in capitalize mt-2">play for free</a>
+                            </div>
+                        </div>
+
+                        <div class="relative transition-transform duration-200 ease-in transform hover:scale-105 hover:shadow-2xl hover:shadow-red-color ">
+                            <img src="images/lor.jpg" alt="" class="rounded-xl h-auto w-auto">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-100 bg-black bg-opacity-20 duration-200 rounded-xl">
+                                <img src="images/legends-of-runeterra-logotype.png" alt=""  class="w-80">
+                                <a href="" class="px-7 py-2 bg-primary-color text-white rounded-full text-xl font-bold hover:bg-red-color hover:text-white duration-200 ease-in capitalize mt-2">play for free</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+        </section>
+
+        <section id="media" class="bg-image bg-center bg-cover pt-8 pb-8 border-b-8 border-primary-color" style="background-image: url('images/arcane.jpg');">
+            <div class="container mt-8">
+                <div class="flex items-center justify-between md:flex-row">
+                    <h2 class="text-2xl md:text-6xl font-bold capitalize text-white mb-4">Arcane</h2>
+                     <a href="" class="btn1">watch now</a>
+                 </div>
+                 <div class="grid md:grid-cols-2 gap-10 place-content-center mt-4 pb-4">
+                    <div>
+                        <iframe class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/M9GeSbz9478" title="Arcane: Season 2 First Look" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+    
+                    <div>
+                        <iframe  class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/0JSwG2sqUm8" title="Arcane Act II: Sneak Peek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <iframe  class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in"  src="https://www.youtube.com/embed/fXmAurh012s" title="Arcane | Official Trailer | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <iframe   class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/32oT-CWJOC0" title="Arcane: Final Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+       <!--  class="h-full w-full hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" -->
+        <section id="media" class="bg-image bg-center bg-cover pt-8 pb-8 border-b-8 border-primary-color" style="background-image: url('images/targon.jpg');">
+            <div class="container mt-8">
+                <div class="flex items-center justify-between flex-wrap md:flex-row">
+                    <h2 class="text-2xl md:text-6xl font-bold capitalize text-white mb-4">ranked reset cinematic</h2>
+                     <a href="" class="btn1">watch now</a>
+                 </div>
+                 <div class="grid md:grid-cols-2 gap-10 place-content-center mt-4 pb-4">
+                    <div>
+                        <iframe class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/C3GouGa0noM" title="GODS ft. NewJeans (뉴진스) (Official Music Video) | Worlds 2023 Anthem - League of Legends" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+    
+                    <div>
+                        <iframe  class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/ZHhqwBwmRkI" title="Still Here | Season 2024 Cinematic - League of Legends (ft. Forts, Tiffany Aris, and 2WEI)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <iframe  class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/zF5Ddo9JdpY" title="Awaken | Season 2019 Cinematic - League of Legends (ft. Valerie Broussard)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <iframe  class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/8Dyx-bFeK2U" title="League of Legends The Call Season 2022 Cinematic  (ft. 2WEI, Louis Leibfried, and Edda Hayes)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="media" class="bg-image bg-center bg-cover pt-8 pb-8 border-b-8 border-primary-color" style="background-image: url('images/music.webp');">
+            <div class="container mt-8">
+                <div class="flex items-center justify-between flex-wrap md:flex-row">
+                    <h2 class="text-2xl md:text-6xl font-bold capitalize text-white mb-4">music</h2>
+                     <a href="" class="btn1">watch now</a>
+                 </div>
+                 <div class="grid md:grid-cols-2 gap-10 place-content-center mt-4 pb-4">
+                    <div>
+                        <iframe class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/3VTkBuxU4yk" title="K/DA - MORE ft. Madison Beer, (G)I-DLE, Lexie Liu, Jaira Burns, Seraphine (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+    
+                    <div>
+                        <iframe class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/GPpa8KMs50k" title="Pentakill - Edge of Night // Pentakill III: Lost Chapter // English Lyrics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <iframe class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/sVZpHFXcFJw" title="True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) | League of Legends" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <iframe class="md:w-[370px] md:h-[400px] lg:w-[490px] lg:h-[410px] xl:w-[700px] xl:h-[410px] hover:shadow-xl hover:shadow-red-color duratiion-200 ease-in" src="https://www.youtube.com/embed/MDErQ1KTzaI" title="HEARTSTEEL - PARANOIA ft. BAEKHYUN, tobi lou, ØZI, and Cal Scruby (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer bg-black text-white pt-8">
+          <div class="container">
+            <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+              <li>
+                <div class="space-y-3">
+                  <a href="" class="text-4xl capitalize">
+                    Make<span class="text-red-color">-up</span>
+                  </a>
+  
+                  <p class="text-md">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                  </p>
+                </div>
+              </li>
+  
+              <li>
+                <div class="flex flex-col gap-3">
+                  <h3 class="text-xl capitalize text-red-color">SUPPORT</h3>
+                  <a href="" class="text-md hover:text-red-color">FAQ's</a>
+                  <a href="" class="text-md hover:text-red-color">Privacy Policy</a>
+                  <a href="" class="text-md hover:ttext-red-color">Term & Condition</a>
+                  <a href="" class="text-md hover:text-red-color">Contact</a>
+                </div>
+              </li>
+  
+              <li class="space-y-8">
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-red-color">phone</h3>
+  
+                  <p class="flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-phone text-lg text-red-color"></i>
+                    +1 000 000 0000
+                  </p>
+                </div>
+  
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-red-color">email</h3>
+  
+                  <p class="flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-envelope text-lg text-red-color"></i>
+                    gameup.info@email.com
+                  </p>
+                </div>
+              </li>
+  
+              <li class="space-y-8">
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-red-color">address</h3>
+  
+                  <p class="flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-location-dot text-lg text-red-color"></i>
+                    Address goes here
+                  </p>
+                </div>
+  
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-red-color">follow us</h3>
+  
+                  <div class="space-x-3">
+                    <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-red-color hover:-translate-y-1 ease-in duration-200"></i>
+                    <i class="fa-brands fa-twitter text-lg cursor-pointer text-red-color hover:-translate-y-1 ease-in duration-200"></i>
+                    <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-red-color hover:-translate-y-1 ease-in duration-200"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+  
+            <div class="flex flex-col items-center border-t text-red-color dark:border-brown py-5 md:flex-row md:justify-between">
+              <p class="">game web template by Ahbab Sameer</p>
+              <p class="">Copyright © 2024. All rights reserved.</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+</body>
+</html>
+
